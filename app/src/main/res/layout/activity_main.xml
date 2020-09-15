@@ -73,14 +73,14 @@
         android:layout_height="135dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="sans-serif"
         android:text="I’m Christia and I’m a senior at Vanderbilt University studying Biomedical Engineering.  "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_designerName1"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/tv_designerName1"
