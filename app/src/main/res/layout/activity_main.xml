@@ -10,16 +10,31 @@
         android:id="@+id/tv_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:text="ABOUT US"
         android:textColor="#00BCD4"
         android:textSize="50sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_companyDescription"
+        android:layout_width="352dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="8dp"
+        android:text="Basal cell carcinoma (BCC) is the most common form of skin cancer as well as the most frequently occurring form of all cancers. Most BCCs are curable when caught early, but they can often be difficult to differentiate from other skin conditions, such as psoriasis or eczema. [Company] is focused on connecting patients with dermatologists remotely in order to make diagnosis and treatment of basal cell carcinoma faster and more accessible. "
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_companyName" />
 
     <TextView
         android:id="@+id/tv_companyName"
@@ -27,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
         android:text="Company"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -37,90 +52,98 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_header" />
 
     <TextView
-        android:id="@+id/tv_companyDescription"
-        android:layout_width="292dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="16dp"
-        android:text="This is where we are going to talk about our company and the purpose of the app"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_companyName" />
-
-    <TextView
         android:id="@+id/tv_designers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Designers"
+        android:text="Meet the Team"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHighlight="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tv_companyDescription"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_companyDescription" />
 
     <TextView
         android:id="@+id/tv_designerDescription1"
-        android:layout_width="116dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="16dp"
-        android:text="- Senior BME at Vandy"
+        android:layout_width="160dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif"
+        android:text="I’m Christia and I’m a senior at Vanderbilt University studying Biomedical Engineering.  "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designerName1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_designerName1"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/tv_designerName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Christia Victoriano"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tv_designerDescription2"
+        android:layout_width="116dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="47dp"
+        android:text="- Junior BME at Vandy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toEndOf="@+id/tv_designerDescription1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_designerName2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_designerName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:fontFamily="sans-serif-black"
         android:text="Christina Sundt"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designers" />
-
-    <TextView
-        android:id="@+id/tv_designerName1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="16dp"
-        android:text="Christia Victoriano"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designers" />
-
-    <TextView
-        android:id="@+id/tv_designerDescription2"
-        android:layout_width="81dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:text="- Junior BME at Vandy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designerName2" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designerDescription1"
-        tools:layout_editor_absoluteX="21dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_designerDescription2"
-        tools:layout_editor_absoluteX="245dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_designers"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="156dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_designers"
+        app:srcCompat="@drawable/christia_headshot" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
